@@ -1,0 +1,6 @@
+.vs/
+[Bb]in/
+[Ob]j/
+*.dll
+*.exe
+*.log

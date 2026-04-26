@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "XKCB (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "XKCB (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

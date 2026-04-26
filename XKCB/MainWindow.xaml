@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="XKCB.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XKCB">
+
+    <Grid Background="#0A0A0A">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Padding="24,24,24,0" Spacing="24">
+            <TextBlock Text="🎬 XKCB Engine" Foreground="White" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
+
+            <AutoSuggestBox x:Name="SearchBox"
+                            PlaceholderText="Search movies, TV shows, IMAX, HDR..."
+                            Width="400"
+                            VerticalAlignment="Center"
+                            TextChanged="SearchBox_TextChanged"
+                            SuggestionChosen="SearchBox_SuggestionChosen"
+                            UpdateTextOnSelect="False">
+
+                <AutoSuggestBox.ItemTemplate>
+                    <DataTemplate x:DataType="local:MediaItem">
+                        <StackPanel Orientation="Horizontal" Spacing="12" Padding="4">
+                            <Border CornerRadius="4" Width="30" Height="45">
+                                <Image Source="{x:Bind PosterUrl}" Stretch="UniformToFill"/>
+                            </Border>
+
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock Text="{x:Bind Title}" FontWeight="SemiBold" Foreground="White"/>
+                                <TextBlock Text="{x:Bind Year}" FontSize="12" Foreground="#888888"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </AutoSuggestBox.ItemTemplate>
+
+            </AutoSuggestBox>
+        </StackPanel>
+
+        <GridView x:Name="MovieGrid" 
+                  Grid.Row="1"
+                  Padding="24"
+                  SelectionMode="None"
+                  IsItemClickEnabled="True"
+                  ItemClick="MovieGrid_ItemClick"
+                  ShowsScrollingPlaceholders="True">
+
+            <GridView.ItemTemplate>
+                <DataTemplate x:DataType="local:MediaItem">
+                    <Grid Width="200" Height="300" Margin="8" CornerRadius="8">
+                        <Image Source="{x:Bind PosterUrl}" Stretch="UniformToFill" />
+                        <Border VerticalAlignment="Bottom" Height="100">
+                            <Border.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                    <GradientStop Color="Transparent" Offset="0.0" />
+                                    <GradientStop Color="#CC000000" Offset="1.0" />
+                                </LinearGradientBrush>
+                            </Border.Background>
+                        </Border>
+                        <StackPanel VerticalAlignment="Bottom" Padding="12">
+                            <TextBlock Text="{x:Bind Title}" Foreground="White" FontWeight="Bold" TextTrimming="CharacterEllipsis"/>
+                            <TextBlock Text="{x:Bind Year}" Foreground="#AAAAAA" FontSize="12"/>
+                        </StackPanel>
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+</Window>

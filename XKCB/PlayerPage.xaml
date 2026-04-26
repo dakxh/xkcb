@@ -1,0 +1,14 @@
+<Page
+    x:Class="XKCB.PlayerPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Background="Black">
+
+    <Grid>
+        <SwapChainPanel x:Name="VideoSurface" />
+
+        <Grid x:Name="ControlsOverlay" VerticalAlignment="Top" Padding="24" Background="#88000000">
+            <Button Content="← Close Player" Click="CloseButton_Click" Foreground="White" Style="{ThemeResource TextBlockButtonStyle}" FontSize="16"/>
+        </Grid>
+    </Grid>
+</Page>

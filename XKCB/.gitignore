@@ -1,0 +1,21 @@
+﻿# Visual Studio guts (The culprit)
+.vs/
+
+# Build artifacts
+[Bb]in/
+[Ob]j/
+AppPackages/
+BundleArtifacts/
+
+# Native binaries (Don't push your mpv-2.dll!)
+*.dll
+*.exe
+*.pdb
+
+# User-specific files
+*.user
+*.userosscache
+*.sln.docstates
+
+# Logging
+*.log
