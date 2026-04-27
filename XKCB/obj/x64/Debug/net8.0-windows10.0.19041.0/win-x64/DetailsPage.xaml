@@ -6,43 +6,94 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="#0A0A0A">
+    Background="Black">
 
-    <Grid>
-        <Image x:ConnectionId='2' x:Name="BackdropImage" Stretch="UniformToFill" Opacity="0.4" VerticalAlignment="Top" Height="600"/>
+    <Grid Background="Black">
 
-        <Border VerticalAlignment="Top" Height="600">
-            <Border.Background>
-                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                    <GradientStop Color="Transparent" Offset="0.5" />
-                    <GradientStop Color="#0A0A0A" Offset="1.0" />
-                </LinearGradientBrush>
-            </Border.Background>
-        </Border>
+        <!-- 1. BACKGROUND LAYER (No Gradients, Right-aligned 90% width) -->
+        <Grid>
+            <Image x:ConnectionId='15' Grid.Column="1" x:Name="BackdropImage" Stretch="UniformToFill" HorizontalAlignment="Stretch" VerticalAlignment="Top" Height="768" Opacity="0.2" />
+        </Grid>
 
-        <StackPanel Padding="40" VerticalAlignment="Bottom" MaxWidth="1200" HorizontalAlignment="Left">
+        <!-- 2. CONTENT LAYER (Vertically Centered Layout) -->
+        <Grid Padding="60,0,10,0" MaxWidth="1920" HorizontalAlignment="Stretch" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-            <Button x:ConnectionId='3' Content="← Back to Catalog"                          Style="{ThemeResource TextBlockButtonStyle}" Foreground="#AAAAAA" Margin="0,0,0,20"/>
+            <!-- Poster Area -->
+            <Border Grid.Column="0" Width="420" Height="630" CornerRadius="8" Margin="0,60,100,0" VerticalAlignment="Center">
+                <Border.Shadow>
+                    <ThemeShadow />
+                </Border.Shadow>
+                <Border.Background>
+                    <ImageBrush x:ConnectionId='14' x:Name="PosterImageBrush" Stretch="UniformToFill" />
+                </Border.Background>
+            </Border>
 
-            <TextBlock x:ConnectionId='4' x:Name="TitleText" FontSize="48" FontWeight="Bold" Foreground="White" TextWrapping="Wrap"/>
-            <TextBlock x:ConnectionId='5' x:Name="YearText" FontSize="20" Foreground="#CCCCCC" Margin="0,4,0,24"/>
+            <!-- Text & Actions Area -->
+            <StackPanel Grid.Column="1" VerticalAlignment="Center">
 
-            <TextBlock Text="AVAILABLE STREAMS" FontSize="14" FontWeight="SemiBold" Foreground="#888888" Margin="0,0,0,12" CharacterSpacing="100"/>
+                <!-- Title -->
+                <TextBlock x:ConnectionId='3' x:Name="TitleText" FontSize="64" FontWeight="Bold" Foreground="White" TextWrapping="Wrap" Margin="0,300,0,0">
+                    <TextBlock.Shadow>
+                        <ThemeShadow />
+                    </TextBlock.Shadow>
+                </TextBlock>
 
-            <ListView x:ConnectionId='6' x:Name="SourcesList" SelectionMode="None">
-                <ListView.ItemTemplate>
-                    <DataTemplate                               >
-                        <Border x:ConnectionId='8' Background="#1A1A1A" CornerRadius="8" Padding="16,12" Margin="0,0,0,8" BorderBrush="#333333" BorderThickness="1">
-                            <Grid>
-                                <TextBlock x:ConnectionId='9'                               Foreground="White" FontSize="16" VerticalAlignment="Center"/>
-                                <Button x:ConnectionId='10' Content="PLAY"                                            HorizontalAlignment="Right" Background="#E50914" Foreground="White" CornerRadius="4" FontWeight="Bold"/>
-                            </Grid>
-                        </Border>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                <!-- Meta Data (Year, Rating) -->
+                <StackPanel Orientation="Horizontal" Spacing="12" Margin="0,0,0,20">
+                    <TextBlock x:ConnectionId='12' x:Name="YearText" FontSize="15" Foreground="#D4D4D4"/>
+                    <TextBlock Text="•" FontSize="15" Foreground="#525252"/>
+                    <TextBlock x:ConnectionId='13' x:Name="RatingText" FontSize="15" Foreground="#FACC15" FontWeight="SemiBold"/>
+                </StackPanel>
 
-        </StackPanel>
+                <!-- Sources Container -->
+                <StackPanel x:ConnectionId='4' x:Name="SourcesSection" Visibility="Collapsed" Background="#000000" Padding="24" CornerRadius="8" BorderBrush="#1A1A1A" BorderThickness="1" HorizontalAlignment="Left" MinWidth="750">
+                    <TextBlock Text="SELECT SOURCE" FontSize="12" FontFamily="Consolas" Foreground="#737373" Margin="0,0,0,16" CharacterSpacing="100"/>
+
+                    <ItemsControl x:ConnectionId='8' x:Name="SourcesList">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="-1" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate                               >
+                                <Button x:ConnectionId='10'                                            
+                                        Background="Transparent" BorderBrush="#2A2A2A" BorderThickness="1" CornerRadius="6" 
+                                        Padding="24,12" Margin="0,0,16,16" MinWidth="160">
+                                    <TextBlock x:ConnectionId='11'                               Foreground="#E5E5E5" FontFamily="Consolas" FontSize="14" CharacterSpacing="50" HorizontalAlignment="Center"/>
+                                </Button>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+
+                <!-- Seasons Container -->
+                <StackPanel x:ConnectionId='5' x:Name="SeasonsSection" Visibility="Collapsed" Background="#080808" Padding="24" CornerRadius="8" BorderBrush="#1A1A1A" BorderThickness="1" HorizontalAlignment="Left" MinWidth="750">
+                    <TextBlock Text="SELECT SEASON" FontSize="12" FontFamily="Consolas" Foreground="#737373" Margin="0,0,0,16" CharacterSpacing="100"/>
+
+                    <ItemsControl x:ConnectionId='6' x:Name="SeasonsList">
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapGrid Orientation="Horizontal" MaximumRowsOrColumns="-1" />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Button Content="Season" Background="Transparent" BorderBrush="#2A2A2A" BorderThickness="1" CornerRadius="6" Padding="24,12" Margin="0,0,16,16" Foreground="#E5E5E5" FontFamily="Consolas" FontSize="14" CharacterSpacing="50"/>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                    </ItemsControl>
+                </StackPanel>
+
+            </StackPanel>
+        </Grid>
+
+        <!-- Back Button -->
+        <Button x:ConnectionId='2' Content="← Back"                          Style="{ThemeResource TextBlockButtonStyle}" Foreground="#A3A3A3" FontFamily="Consolas" FontSize="12" CharacterSpacing="100" Margin="40,40,0,0" VerticalAlignment="Top" HorizontalAlignment="Left"/>
     </Grid>
 </Page>
 

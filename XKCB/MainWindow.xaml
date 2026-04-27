@@ -11,12 +11,11 @@
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <StackPanel Grid.Row="0" Orientation="Horizontal" Padding="24,24,24,0" Spacing="24">
-            <TextBlock Text="🎬 XKCB Engine" Foreground="White" FontSize="24" FontWeight="Bold" VerticalAlignment="Center"/>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Padding="32,24,24,0">
 
             <AutoSuggestBox x:Name="SearchBox"
-                            PlaceholderText="Search movies, TV shows, IMAX, HDR..."
-                            Width="400"
+                            PlaceholderText="Search here"
+                            Width="600"
                             VerticalAlignment="Center"
                             TextChanged="SearchBox_TextChanged"
                             SuggestionChosen="SearchBox_SuggestionChosen"
@@ -42,7 +41,7 @@
 
         <GridView x:Name="MovieGrid" 
                   Grid.Row="1"
-                  Padding="24"
+                  Padding="20,24,24,24"
                   SelectionMode="None"
                   IsItemClickEnabled="True"
                   ItemClick="MovieGrid_ItemClick"
@@ -52,17 +51,8 @@
                 <DataTemplate x:DataType="local:MediaItem">
                     <Grid Width="200" Height="300" Margin="8" CornerRadius="8">
                         <Image Source="{x:Bind PosterUrl}" Stretch="UniformToFill" />
-                        <Border VerticalAlignment="Bottom" Height="100">
-                            <Border.Background>
-                                <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
-                                    <GradientStop Color="Transparent" Offset="0.0" />
-                                    <GradientStop Color="#CC000000" Offset="1.0" />
-                                </LinearGradientBrush>
-                            </Border.Background>
-                        </Border>
-                        <StackPanel VerticalAlignment="Bottom" Padding="12">
+                        <StackPanel VerticalAlignment="Bottom" Padding="8">
                             <TextBlock Text="{x:Bind Title}" Foreground="White" FontWeight="Bold" TextTrimming="CharacterEllipsis"/>
-                            <TextBlock Text="{x:Bind Year}" Foreground="#AAAAAA" FontSize="12"/>
                         </StackPanel>
                     </Grid>
                 </DataTemplate>

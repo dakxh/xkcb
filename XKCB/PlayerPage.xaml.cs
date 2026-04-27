@@ -44,7 +44,7 @@ namespace XKCB
         {
             try
             {
-                AppLogger.Log("Initializing libmpv C-Engine...");
+                AppLogger.Log("Initializing libmpv C-Engine in Detached Mode...");
 
                 // 1. Force the absolute path to the .exe folder
                 string dllPath = System.IO.Path.Combine(System.AppContext.BaseDirectory, "libmpv-2.dll");
@@ -59,27 +59,31 @@ namespace XKCB
 
                 AppLogger.Log("Configuring mpv properties...");
 
-                // --- FIXED HWND BINDING CODE ---
-                // Since MainWindow is static, access it directly via the App type
-                var appWindow = App.MainWindow;
-                IntPtr hwnd = WinRT.Interop.WindowNative.GetWindowHandle(appWindow);
+                // --- ENABLE NATIVE MPV UI & CONTROLS ---
+                // Reactivate the internal Lua On-Screen Controller
+                _mpv.SetPropertyString("osc", "yes");
 
-                // Bind the C-Engine to your WinUI 3 frame
-                _mpv.SetPropertyLong("wid", hwnd.ToInt64());
-                // -------------------------------
+                // Bind standard mpv hotkeys (Space to pause, arrows to seek, etc.)
+                _mpv.SetPropertyString("input-default-bindings", "yes");
+
+                // Ensure the detached window captures keyboard/mouse inputs directly
+                _mpv.SetPropertyString("input-vo-keyboard", "yes");
+                // ---------------------------------------
 
                 _mpv.SetPropertyString("force-window", "yes");
                 _mpv.SetPropertyString("ontop", "yes");
-                _mpv.SetPropertyString("keep-open", "no");
+                _mpv.SetPropertyString("keep-open", "yes");
                 _mpv.SetPropertyString("autofit", "1280x720");
                 _mpv.SetPropertyString("hwdec", "auto");
 
-                AppLogger.Log($"Loading Hugging Face Manifest: {manifestUrl}");
+                // Optional: Give the pop-out window a clean title
+                _mpv.SetPropertyString("title", "XKCB Native Player");
+
+                AppLogger.Log($"Loading Manifest: {manifestUrl}");
                 _mpv.Command("loadfile", manifestUrl);
             }
             catch (System.Exception ex)
             {
-                // If anything goes wrong, catch it BEFORE it kills the app
                 AppLogger.Log($"!!! ENGINE FATAL ERROR !!!");
                 AppLogger.Log($"Message: {ex.Message}");
                 AppLogger.Log($"StackTrace: {ex.StackTrace}");
