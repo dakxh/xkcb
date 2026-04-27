@@ -5,6 +5,7 @@ C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\w
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Square44x44Logo.targetsize-24_altform-unplated.png
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\StoreLogo.png
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Assets\Wide310x150Logo.scale-200.png
+C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\libmpv-2.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.exe
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DetailsPage.xbf
@@ -46,7 +47,6 @@ C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\w
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.AI.MachineLearning.Projection.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.Windows.Widgets.Projection.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Microsoft.WinUI.dll
-C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\Mpv.NET.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.IO.Pipelines.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Numerics.Tensors.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\System.Text.Encodings.Web.dll
@@ -260,6 +260,7 @@ C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\w
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.AssemblyInfoInputs.cache
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.AssemblyInfo.cs
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.csproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.sourcelink.json
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.csproj.Up2Date
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\refint\XKCB.dll

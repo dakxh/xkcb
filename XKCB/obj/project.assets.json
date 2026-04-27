@@ -330,19 +330,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.WinUI.targets": {}
         }
       },
-      "Mpv.NET/1.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
-        }
-      },
       "System.IO.Pipelines/10.0.7": {
         "type": "package",
         "compile": {
@@ -706,19 +693,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.WinUI.targets": {}
         }
       },
-      "Mpv.NET/1.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
-        }
-      },
       "System.IO.Pipelines/10.0.7": {
         "type": "package",
         "compile": {
@@ -1076,19 +1050,6 @@
           "buildTransitive/Microsoft.WindowsAppSDK.WinUI.targets": {}
         }
       },
-      "Mpv.NET/1.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
-        }
-      },
       "System.IO.Pipelines/10.0.7": {
         "type": "package",
         "compile": {
@@ -1444,19 +1405,6 @@
         "build": {
           "buildTransitive/Microsoft.WindowsAppSDK.WinUI.props": {},
           "buildTransitive/Microsoft.WindowsAppSDK.WinUI.targets": {}
-        }
-      },
-      "Mpv.NET/1.1.1": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
-        },
-        "runtime": {
-          "lib/netstandard2.0/Mpv.NET.dll": {
-            "related": ".deps.json;.pdb"
-          }
         }
       },
       "System.IO.Pipelines/10.0.7": {
@@ -3421,20 +3369,6 @@
         "tools/x86/GenXbf.dll"
       ]
     },
-    "Mpv.NET/1.1.1": {
-      "sha512": "iAlbkT45f4t/02KrxwRVkYXOJExI+LxZ0bZsMuDlCPbR/6HK5jWaz1LwTugSS1l6ouCTZLnmDHQFAlA/J20SIA==",
-      "type": "package",
-      "path": "mpv.net/1.1.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/netstandard2.0/Mpv.NET.deps.json",
-        "lib/netstandard2.0/Mpv.NET.dll",
-        "lib/netstandard2.0/Mpv.NET.pdb",
-        "mpv.net.1.1.1.nupkg.sha512",
-        "mpv.net.nuspec"
-      ]
-    },
     "System.IO.Pipelines/10.0.7": {
       "sha512": "LTxXYYKmRhPKWveYmfzuRTUnzsfY7CN+WOq6aTRgYE9vJ8BUvIWPCaSx4HxqBwXViTPSjR9cHDOVuVPuZGRR/Q==",
       "type": "package",
@@ -3606,7 +3540,6 @@
     "net8.0-windows10.0.19041": [
       "Microsoft.Windows.SDK.BuildTools >= 10.0.28000.1721",
       "Microsoft.WindowsAppSDK >= 1.8.260416003",
-      "Mpv.NET >= 1.1.1",
       "System.Text.Json >= 10.0.7"
     ]
   },
@@ -3669,10 +3602,6 @@
           "Microsoft.WindowsAppSDK": {
             "target": "Package",
             "version": "[1.8.260416003, )"
-          },
-          "Mpv.NET": {
-            "target": "Package",
-            "version": "[1.1.1, )"
           },
           "System.Text.Json": {
             "target": "Package",

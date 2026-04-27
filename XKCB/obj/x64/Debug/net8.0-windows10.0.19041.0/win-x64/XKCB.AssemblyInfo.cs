@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("XKCB")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f65745fff3447b068456eed729152e7e50c63fec")]
 [assembly: System.Reflection.AssemblyProductAttribute("XKCB")]
 [assembly: System.Reflection.AssemblyTitleAttribute("XKCB")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8vQUs75/L2w=",
+  "dgSpecHash": "nDMdlg6LSaE=",
   "success": true,
   "projectFilePath": "C:\\Users\\Admin\\source\\repos\\XKCB\\XKCB\\XKCB.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,6 @@
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsappsdk.runtime\\1.8.260416003\\microsoft.windowsappsdk.runtime.1.8.260416003.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsappsdk.widgets\\1.8.251231004\\microsoft.windowsappsdk.widgets.1.8.251231004.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\microsoft.windowsappsdk.winui\\1.8.260415005\\microsoft.windowsappsdk.winui.1.8.260415005.nupkg.sha512",
-    "C:\\Users\\Admin\\.nuget\\packages\\mpv.net\\1.1.1\\mpv.net.1.1.1.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.io.pipelines\\10.0.7\\system.io.pipelines.10.0.7.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.numerics.tensors\\9.0.0\\system.numerics.tensors.9.0.0.nupkg.sha512",
     "C:\\Users\\Admin\\.nuget\\packages\\system.text.encodings.web\\10.0.7\\system.text.encodings.web.10.0.7.nupkg.sha512",

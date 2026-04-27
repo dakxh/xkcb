@@ -2,6 +2,7 @@ using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Navigation;
 using Mpv.NET.API;
 using System;
+using XKCB;
 
 namespace XKCB
 {
@@ -25,7 +26,16 @@ namespace XKCB
 
                 if (streamData != null && !string.IsNullOrEmpty(streamData.HlsManifestUrl))
                 {
-                    InitializePlayer(streamData.HlsManifestUrl);
+                    string finalUrl = streamData.HlsManifestUrl;
+
+                    // If it's a Hugging Face URL, route it through our WinUI 3 proxy
+                    if (finalUrl.Contains("huggingface.co"))
+                    {
+                        LocalHlsProxy.Start();
+                        finalUrl = finalUrl.Replace("https://huggingface.co", "http://127.0.0.1:54321");
+                    }
+
+                    InitializePlayer(finalUrl);
                 }
             }
         }
@@ -48,6 +58,16 @@ namespace XKCB
                 _mpv.RequestLogMessages(Mpv.NET.API.MpvLogLevel.Debug);
 
                 AppLogger.Log("Configuring mpv properties...");
+
+                // --- FIXED HWND BINDING CODE ---
+                // Since MainWindow is static, access it directly via the App type
+                var appWindow = App.MainWindow;
+                IntPtr hwnd = WinRT.Interop.WindowNative.GetWindowHandle(appWindow);
+
+                // Bind the C-Engine to your WinUI 3 frame
+                _mpv.SetPropertyLong("wid", hwnd.ToInt64());
+                // -------------------------------
+
                 _mpv.SetPropertyString("force-window", "yes");
                 _mpv.SetPropertyString("ontop", "yes");
                 _mpv.SetPropertyString("keep-open", "no");
