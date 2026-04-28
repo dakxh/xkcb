@@ -1,0 +1,61 @@
+﻿<Page
+    x:Class="XKCB.CatalogPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:XKCB"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="#0A0A0A">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Padding="30,24,24,0">
+            <AutoSuggestBox x:ConnectionId='6' x:Name="SearchBox"
+                            PlaceholderText="Search here"
+                            Width="600"
+                            VerticalAlignment="Center"
+                                                               
+                                                                         
+                            UpdateTextOnSelect="False">
+
+                <AutoSuggestBox.ItemTemplate>
+                    <DataTemplate                             >
+                        <StackPanel x:ConnectionId='8' Orientation="Horizontal" Spacing="12" Padding="4">
+                            <Border CornerRadius="4" Width="30" Height="45">
+                                <Image x:ConnectionId='11'                             Stretch="UniformToFill"/>
+                            </Border>
+
+                            <StackPanel VerticalAlignment="Center">
+                                <TextBlock x:ConnectionId='9'                       FontWeight="SemiBold" Foreground="White"/>
+                                <TextBlock x:ConnectionId='10'                      FontSize="12" Foreground="#888888"/>
+                            </StackPanel>
+                        </StackPanel>
+                    </DataTemplate>
+                </AutoSuggestBox.ItemTemplate>
+            </AutoSuggestBox>
+        </StackPanel>
+
+        <GridView x:ConnectionId='2' x:Name="MovieGrid" 
+                  Grid.Row="1"
+                  Padding="22,22,22,22"
+                  SelectionMode="None"
+                  IsItemClickEnabled="True"
+                                                 
+                  ShowsScrollingPlaceholders="True">
+
+            <GridView.ItemTemplate>
+                <DataTemplate                             >
+                    <Grid x:ConnectionId='4' Width="200" Height="300" Margin="8" CornerRadius="8">
+                        <Image x:ConnectionId='5'                             Stretch="UniformToFill" />
+                    </Grid>
+                </DataTemplate>
+            </GridView.ItemTemplate>
+        </GridView>
+    </Grid>
+</Page>
+

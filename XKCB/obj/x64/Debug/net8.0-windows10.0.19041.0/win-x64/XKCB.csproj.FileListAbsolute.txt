@@ -8,6 +8,7 @@ C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\w
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\libmpv-2.dll
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.exe
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
+C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CatalogPage.xbf
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DetailsPage.xbf
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
 C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\win-x64\PlayerPage.xbf
@@ -240,6 +241,8 @@ C:\Users\Admin\source\repos\XKCB\XKCB\bin\x64\Debug\net8.0-windows10.0.19041.0\w
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XKCB.csproj.AssemblyReference.cache
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.g.i.cs
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.g.cs
+C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CatalogPage.g.i.cs
+C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CatalogPage.g.cs
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DetailsPage.g.i.cs
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DetailsPage.g.cs
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.g.i.cs
@@ -248,10 +251,12 @@ C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\w
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\PlayerPage.g.cs
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\XamlTypeInfo.g.cs
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xaml
+C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CatalogPage.xaml
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DetailsPage.xaml
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xaml
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\PlayerPage.xaml
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\App.xbf
+C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\CatalogPage.xbf
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\DetailsPage.xbf
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\MainWindow.xbf
 C:\Users\Admin\source\repos\XKCB\XKCB\obj\x64\Debug\net8.0-windows10.0.19041.0\win-x64\PlayerPage.xbf

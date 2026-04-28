@@ -84,16 +84,23 @@ namespace XKCB
         [JsonPropertyName("seasons")] public List<Season>? Seasons { get; set; }
     }
 
+    // [NEW] Represents a single subtitle track returned by the worker
+    // Represents a single subtitle track returned by the worker
+    // Represents a single subtitle track returned by the worker
+    public class SubtitleTrack
+    {
+        [JsonPropertyName("language")] public string? Language { get; set; }
+        [JsonPropertyName("codec")] public string? Codec { get; set; }
+        [JsonPropertyName("url")] public string? Url { get; set; }
+    }
+
+    // The single, final WatchResponse class
     public class WatchResponse
     {
         [JsonPropertyName("hls_manifest_url")]
         public string? HlsManifestUrl { get; set; }
 
-        [JsonPropertyName("timeline_thumbnails_url")]
-        public string? TimelineThumbnailsUrl { get; set; }
-
-        // The worker returns these as stringified JSON arrays, 
-        // but since we are just passing them to mpv, we can grab the raw properties if needed later.
-        // For right now, we just need the manifest URL to start playback!
+        [JsonPropertyName("available_subs")]
+        public List<SubtitleTrack>? AvailableSubs { get; set; }
     }
 }

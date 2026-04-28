@@ -26,61 +26,65 @@ namespace XKCB
 
                 if (streamData != null && !string.IsNullOrEmpty(streamData.HlsManifestUrl))
                 {
-                    string finalUrl = streamData.HlsManifestUrl;
-
-                    // If it's a Hugging Face URL, route it through our WinUI 3 proxy
-                    if (finalUrl.Contains("huggingface.co"))
-                    {
-                        LocalHlsProxy.Start();
-                        finalUrl = finalUrl.Replace("https://huggingface.co", "http://127.0.0.1:54321");
-                    }
-
-                    InitializePlayer(finalUrl);
+                    // Pass the entire streamData object so we have access to the subs array
+                    InitializePlayer(streamData);
                 }
             }
         }
 
-        private void InitializePlayer(string manifestUrl)
+        private void InitializePlayer(WatchResponse streamData)
         {
             try
             {
                 AppLogger.Log("Initializing libmpv C-Engine in Detached Mode...");
 
-                // 1. Force the absolute path to the .exe folder
                 string dllPath = System.IO.Path.Combine(System.AppContext.BaseDirectory, "libmpv-2.dll");
-                AppLogger.Log($"Looking for engine at: {dllPath}");
-
-                // 2. Initialize with the absolute path
                 _mpv = new Mpv.NET.API.Mpv(dllPath);
 
-                // 3. Attach logs
                 _mpv.LogMessage += Mpv_LogMessage;
                 _mpv.RequestLogMessages(Mpv.NET.API.MpvLogLevel.Debug);
 
-                AppLogger.Log("Configuring mpv properties...");
-
-                // --- ENABLE NATIVE MPV UI & CONTROLS ---
-                // Reactivate the internal Lua On-Screen Controller
                 _mpv.SetPropertyString("osc", "yes");
-
-                // Bind standard mpv hotkeys (Space to pause, arrows to seek, etc.)
                 _mpv.SetPropertyString("input-default-bindings", "yes");
-
-                // Ensure the detached window captures keyboard/mouse inputs directly
                 _mpv.SetPropertyString("input-vo-keyboard", "yes");
-                // ---------------------------------------
-
                 _mpv.SetPropertyString("force-window", "yes");
                 _mpv.SetPropertyString("ontop", "yes");
                 _mpv.SetPropertyString("keep-open", "yes");
                 _mpv.SetPropertyString("autofit", "1280x720");
                 _mpv.SetPropertyString("hwdec", "auto");
-
-                // Optional: Give the pop-out window a clean title
                 _mpv.SetPropertyString("title", "XKCB Native Player");
 
-                AppLogger.Log($"Loading Manifest: {manifestUrl}");
-                _mpv.Command("loadfile", manifestUrl);
+                // --- NEW: Hook into the FileLoaded event ---
+                _mpv.FileLoaded += (sender, args) =>
+                {
+                    if (streamData.AvailableSubs != null && streamData.AvailableSubs.Count > 0)
+                    {
+                        AppLogger.Log($"Video timeline established. Injecting {streamData.AvailableSubs.Count} subtitle tracks...");
+                        foreach (var sub in streamData.AvailableSubs)
+                        {
+                            if (!string.IsNullOrEmpty(sub.Url))
+                            {
+                                string title = !string.IsNullOrEmpty(sub.Language) ? sub.Language : "Unknown";
+
+                                try
+                                {
+                                    // 'auto' loads it into the track list without forcing it on.
+                                    // Passing the title twice populates both the 'Title' and 'Language' metadata in the UI.
+                                    _mpv.Command("sub-add", sub.Url, "auto", title, title);
+                                    AppLogger.Log($"Added subtitle: {title} ({sub.Url})");
+                                }
+                                catch (Exception subEx)
+                                {
+                                    AppLogger.Log($"Failed to add subtitle {title}: {subEx.Message}");
+                                }
+                            }
+                        }
+                    }
+                };
+                // -------------------------------------------
+
+                AppLogger.Log($"Loading Manifest directly: {streamData.HlsManifestUrl}");
+                _mpv.Command("loadfile", streamData.HlsManifestUrl);
             }
             catch (System.Exception ex)
             {
@@ -90,16 +94,13 @@ namespace XKCB
             }
         }
 
-        // 3. This event fires hundreds of times a second as the engine runs
         private void Mpv_LogMessage(object? sender, Mpv.NET.API.MpvLogMessageEventArgs e)
         {
-            // We log exactly what mpv is doing at the hardware level
             AppLogger.Log($"[MPV {e.Message.LogLevel}] {e.Message.Prefix}: {e.Message.Text.TrimEnd()}");
         }
 
         private void CloseButton_Click(object sender, Microsoft.UI.Xaml.RoutedEventArgs e)
         {
-            // Destroy the C engine to free memory before leaving
             if (_mpv != null)
             {
                 _mpv.Command("stop");
