@@ -5,6 +5,7 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>XKCB (Unpackaged)</ActiveDebugProfile>
+    <_LastSelectedProfileId>C:\Users\Admin\source\repos\XKCB\XKCB\Properties\PublishProfiles\win-arm64.pubxml</_LastSelectedProfileId>
   </PropertyGroup>
   <ItemGroup>
     <None Update="App.xaml">

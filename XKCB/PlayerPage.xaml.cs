@@ -43,16 +43,32 @@ namespace XKCB
 
                 _mpv.LogMessage += Mpv_LogMessage;
                 _mpv.RequestLogMessages(Mpv.NET.API.MpvLogLevel.Debug);
+                // Enable massive caching for high bitrate 4K video (e.g., 1GB cache)
+                // _mpv.SetPropertyString("cache", "yes");
+                // _mpv.SetPropertyString("demuxer-max-bytes", "1000M");
+                // _mpv.SetPropertyString("demuxer-max-back-bytes", "250M");
 
+                // Force FFmpeg to seamlessly reconnect dropped HTTP/HLS streams
+                // _mpv.SetPropertyString("demuxer-lavf-o", "reconnect=1,reconnect_at_eof=1,reconnect_streamed=1,reconnect_delay_max=5");
+                // Ignore user's local mpv config/scripts folder to prevent random script timeouts
+                // _mpv.SetPropertyString("config", "no");
+                // _mpv.SetPropertyString("load-scripts", "no");
+                // Increase network timeouts to survive Hugging Face redirect delays
+                // _mpv.SetPropertyString("network-timeout", "20");
+                // _mpv.SetPropertyString("vo", "gpu");
+
+                // Apply mpv's built-in fast profile to disable heavy scaling algorithms
+                // _mpv.SetPropertyString("profile", "fast");
+                // _mpv.SetPropertyString("framedrop", "vo"); // Drops frames at the video output layer
                 _mpv.SetPropertyString("osc", "yes");
                 _mpv.SetPropertyString("input-default-bindings", "yes");
                 _mpv.SetPropertyString("input-vo-keyboard", "yes");
                 _mpv.SetPropertyString("force-window", "yes");
                 _mpv.SetPropertyString("ontop", "yes");
                 _mpv.SetPropertyString("keep-open", "yes");
-                _mpv.SetPropertyString("autofit", "1280x720");
-                _mpv.SetPropertyString("hwdec", "auto");
-                _mpv.SetPropertyString("title", "XKCB Native Player");
+                _mpv.SetPropertyString("autofit", "1920x1080");
+                _mpv.SetPropertyString("hwdec", "nvdec");
+                _mpv.SetPropertyString("title", "Native Player");
 
                 // --- NEW: Hook into the FileLoaded event ---
                 _mpv.FileLoaded += (sender, args) =>
