@@ -56,5 +56,14 @@
                 </DataTemplate>
             </GridView.ItemTemplate>
         </GridView>
+
+        <ProgressRing x:Name="LoadingRing"
+                      Grid.Row="1"
+                      IsActive="False"
+                      Width="50"
+                      Height="50"
+                      VerticalAlignment="Bottom"
+                      Margin="0,0,0,30"
+                      Foreground="White"/>
     </Grid>
 </Page>

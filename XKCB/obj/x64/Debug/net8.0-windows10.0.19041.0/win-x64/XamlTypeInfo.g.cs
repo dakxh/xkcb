@@ -226,53 +226,59 @@ namespace XKCB.XKCB_XamlTypeInfo
         
         private void InitTypeTables()
         {
-            _typeNameTable = new string[22];
+            _typeNameTable = new string[25];
             _typeNameTable[0] = "Microsoft.UI.Xaml.Controls.XamlControlsResources";
             _typeNameTable[1] = "Microsoft.UI.Xaml.ResourceDictionary";
             _typeNameTable[2] = "Object";
             _typeNameTable[3] = "Boolean";
-            _typeNameTable[4] = "XKCB.CatalogPage";
-            _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.Page";
-            _typeNameTable[6] = "Microsoft.UI.Xaml.Controls.UserControl";
-            _typeNameTable[7] = "System.Collections.ObjectModel.ObservableCollection`1<XKCB.MediaItem>";
-            _typeNameTable[8] = "System.Collections.ObjectModel.Collection`1<XKCB.MediaItem>";
-            _typeNameTable[9] = "XKCB.MediaItem";
-            _typeNameTable[10] = "String";
-            _typeNameTable[11] = "System.Text.Json.JsonElement";
-            _typeNameTable[12] = "System.ValueType";
-            _typeNameTable[13] = "Double";
-            _typeNameTable[14] = "XKCB.DetailsPage";
-            _typeNameTable[15] = "XKCB.MainWindow";
-            _typeNameTable[16] = "Microsoft.UI.Xaml.Window";
-            _typeNameTable[17] = "XKCB.PlayerPage";
-            _typeNameTable[18] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
-            _typeNameTable[19] = "Microsoft.UI.Xaml.DependencyObject";
-            _typeNameTable[20] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
-            _typeNameTable[21] = "Int32";
+            _typeNameTable[4] = "Microsoft.UI.Xaml.Controls.ProgressRing";
+            _typeNameTable[5] = "Microsoft.UI.Xaml.Controls.Control";
+            _typeNameTable[6] = "Double";
+            _typeNameTable[7] = "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings";
+            _typeNameTable[8] = "Microsoft.UI.Xaml.DependencyObject";
+            _typeNameTable[9] = "XKCB.CatalogPage";
+            _typeNameTable[10] = "Microsoft.UI.Xaml.Controls.Page";
+            _typeNameTable[11] = "Microsoft.UI.Xaml.Controls.UserControl";
+            _typeNameTable[12] = "System.Collections.ObjectModel.ObservableCollection`1<XKCB.MediaItem>";
+            _typeNameTable[13] = "System.Collections.ObjectModel.Collection`1<XKCB.MediaItem>";
+            _typeNameTable[14] = "XKCB.MediaItem";
+            _typeNameTable[15] = "String";
+            _typeNameTable[16] = "System.Text.Json.JsonElement";
+            _typeNameTable[17] = "System.ValueType";
+            _typeNameTable[18] = "XKCB.DetailsPage";
+            _typeNameTable[19] = "XKCB.MainWindow";
+            _typeNameTable[20] = "Microsoft.UI.Xaml.Window";
+            _typeNameTable[21] = "XKCB.PlayerPage";
+            _typeNameTable[22] = "Microsoft.UI.Xaml.Controls.TreeViewNode";
+            _typeNameTable[23] = "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>";
+            _typeNameTable[24] = "Int32";
 
-            _typeTable = new global::System.Type[22];
+            _typeTable = new global::System.Type[25];
             _typeTable[0] = typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources);
             _typeTable[1] = typeof(global::Microsoft.UI.Xaml.ResourceDictionary);
             _typeTable[2] = typeof(global::System.Object);
             _typeTable[3] = typeof(global::System.Boolean);
-            _typeTable[4] = typeof(global::XKCB.CatalogPage);
-            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
-            _typeTable[6] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
-            _typeTable[7] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::XKCB.MediaItem>);
-            _typeTable[8] = typeof(global::System.Collections.ObjectModel.Collection<global::XKCB.MediaItem>);
-            _typeTable[9] = typeof(global::XKCB.MediaItem);
-            _typeTable[10] = typeof(global::System.String);
-            _typeTable[11] = typeof(global::System.Text.Json.JsonElement);
-            _typeTable[12] = typeof(global::System.ValueType);
-            _typeTable[13] = typeof(global::System.Double);
-            _typeTable[14] = typeof(global::XKCB.DetailsPage);
-            _typeTable[15] = typeof(global::XKCB.MainWindow);
-            _typeTable[16] = typeof(global::Microsoft.UI.Xaml.Window);
-            _typeTable[17] = typeof(global::XKCB.PlayerPage);
-            _typeTable[18] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
-            _typeTable[19] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
-            _typeTable[20] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
-            _typeTable[21] = typeof(global::System.Int32);
+            _typeTable[4] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing);
+            _typeTable[5] = typeof(global::Microsoft.UI.Xaml.Controls.Control);
+            _typeTable[6] = typeof(global::System.Double);
+            _typeTable[7] = typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings);
+            _typeTable[8] = typeof(global::Microsoft.UI.Xaml.DependencyObject);
+            _typeTable[9] = typeof(global::XKCB.CatalogPage);
+            _typeTable[10] = typeof(global::Microsoft.UI.Xaml.Controls.Page);
+            _typeTable[11] = typeof(global::Microsoft.UI.Xaml.Controls.UserControl);
+            _typeTable[12] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::XKCB.MediaItem>);
+            _typeTable[13] = typeof(global::System.Collections.ObjectModel.Collection<global::XKCB.MediaItem>);
+            _typeTable[14] = typeof(global::XKCB.MediaItem);
+            _typeTable[15] = typeof(global::System.String);
+            _typeTable[16] = typeof(global::System.Text.Json.JsonElement);
+            _typeTable[17] = typeof(global::System.ValueType);
+            _typeTable[18] = typeof(global::XKCB.DetailsPage);
+            _typeTable[19] = typeof(global::XKCB.MainWindow);
+            _typeTable[20] = typeof(global::Microsoft.UI.Xaml.Window);
+            _typeTable[21] = typeof(global::XKCB.PlayerPage);
+            _typeTable[22] = typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode);
+            _typeTable[23] = typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>);
+            _typeTable[24] = typeof(global::System.Int32);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -308,26 +314,29 @@ namespace XKCB.XKCB_XamlTypeInfo
         }
 
         private object Activate_0_XamlControlsResources() { return new global::Microsoft.UI.Xaml.Controls.XamlControlsResources(); }
-        private object Activate_4_CatalogPage() { return new global::XKCB.CatalogPage(); }
-        private object Activate_7_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::XKCB.MediaItem>(); }
-        private object Activate_8_Collection() { return new global::System.Collections.ObjectModel.Collection<global::XKCB.MediaItem>(); }
-        private object Activate_9_MediaItem() { return new global::XKCB.MediaItem(); }
-        private object Activate_14_DetailsPage() { return new global::XKCB.DetailsPage(); }
-        private object Activate_15_MainWindow() { return new global::XKCB.MainWindow(); }
-        private object Activate_17_PlayerPage() { return new global::XKCB.PlayerPage(); }
-        private object Activate_18_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
+        private object Activate_4_ProgressRing() { return new global::Microsoft.UI.Xaml.Controls.ProgressRing(); }
+        private object Activate_9_CatalogPage() { return new global::XKCB.CatalogPage(); }
+        private object Activate_12_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::XKCB.MediaItem>(); }
+        private object Activate_13_Collection() { return new global::System.Collections.ObjectModel.Collection<global::XKCB.MediaItem>(); }
+        private object Activate_14_MediaItem() { return new global::XKCB.MediaItem(); }
+        private object Activate_18_DetailsPage() { return new global::XKCB.DetailsPage(); }
+        private object Activate_19_MainWindow() { return new global::XKCB.MainWindow(); }
+        private object Activate_21_PlayerPage() { return new global::XKCB.PlayerPage(); }
+        private object Activate_22_TreeViewNode() { return new global::Microsoft.UI.Xaml.Controls.TreeViewNode(); }
         private void StaticInitializer_0_XamlControlsResources() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.XamlControlsResources).TypeHandle);
-        private void StaticInitializer_4_CatalogPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.CatalogPage).TypeHandle);
-        private void StaticInitializer_7_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::XKCB.MediaItem>).TypeHandle);
-        private void StaticInitializer_8_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::XKCB.MediaItem>).TypeHandle);
-        private void StaticInitializer_9_MediaItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.MediaItem).TypeHandle);
-        private void StaticInitializer_11_JsonElement() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Text.Json.JsonElement).TypeHandle);
-        private void StaticInitializer_12_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
-        private void StaticInitializer_14_DetailsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.DetailsPage).TypeHandle);
-        private void StaticInitializer_15_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.MainWindow).TypeHandle);
-        private void StaticInitializer_17_PlayerPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.PlayerPage).TypeHandle);
-        private void StaticInitializer_18_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
-        private void StaticInitializer_20_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
+        private void StaticInitializer_4_ProgressRing() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRing).TypeHandle);
+        private void StaticInitializer_7_ProgressRingTemplateSettings() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings).TypeHandle);
+        private void StaticInitializer_9_CatalogPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.CatalogPage).TypeHandle);
+        private void StaticInitializer_12_ObservableCollection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.ObservableCollection<global::XKCB.MediaItem>).TypeHandle);
+        private void StaticInitializer_13_Collection() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.ObjectModel.Collection<global::XKCB.MediaItem>).TypeHandle);
+        private void StaticInitializer_14_MediaItem() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.MediaItem).TypeHandle);
+        private void StaticInitializer_16_JsonElement() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Text.Json.JsonElement).TypeHandle);
+        private void StaticInitializer_17_ValueType() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.ValueType).TypeHandle);
+        private void StaticInitializer_18_DetailsPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.DetailsPage).TypeHandle);
+        private void StaticInitializer_19_MainWindow() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.MainWindow).TypeHandle);
+        private void StaticInitializer_21_PlayerPage() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::XKCB.PlayerPage).TypeHandle);
+        private void StaticInitializer_22_TreeViewNode() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::Microsoft.UI.Xaml.Controls.TreeViewNode).TypeHandle);
+        private void StaticInitializer_23_IList() => global::System.Runtime.CompilerServices.RuntimeHelpers.RunClassConstructor(typeof(global::System.Collections.Generic.IList<global::Microsoft.UI.Xaml.Controls.TreeViewNode>).TypeHandle);
         private void MapAdd_0_XamlControlsResources(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::System.Object, global::System.Object>)instance;
@@ -335,19 +344,19 @@ namespace XKCB.XKCB_XamlTypeInfo
             var newItem = (global::System.Object)item;
             collection.Add(newKey, newItem);
         }
-        private void VectorAdd_7_ObservableCollection(object instance, object item)
+        private void VectorAdd_12_ObservableCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::XKCB.MediaItem>)instance;
             var newItem = (global::XKCB.MediaItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_8_Collection(object instance, object item)
+        private void VectorAdd_13_Collection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::XKCB.MediaItem>)instance;
             var newItem = (global::XKCB.MediaItem)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_20_IList(object instance, object item)
+        private void VectorAdd_23_IList(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Microsoft.UI.Xaml.Controls.TreeViewNode>)instance;
             var newItem = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)item;
@@ -385,43 +394,75 @@ namespace XKCB.XKCB_XamlTypeInfo
                 xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 4:   //  XKCB.CatalogPage
+            case 4:   //  Microsoft.UI.Xaml.Controls.ProgressRing
+                userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Control"));
+                userType.Activator = Activate_4_ProgressRing;
+                userType.StaticInitializer = StaticInitializer_4_ProgressRing;
+                userType.AddMemberName("IsActive");
+                userType.AddMemberName("IsIndeterminate");
+                userType.AddMemberName("Maximum");
+                userType.AddMemberName("Minimum");
+                userType.AddMemberName("TemplateSettings");
+                userType.AddMemberName("Value");
+                xamlType = userType;
+                break;
+
+            case 5:   //  Microsoft.UI.Xaml.Controls.Control
+                xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 6:   //  Double
+                xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings
+                userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
+                userType.StaticInitializer = StaticInitializer_7_ProgressRingTemplateSettings;
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 8:   //  Microsoft.UI.Xaml.DependencyObject
+                xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 9:   //  XKCB.CatalogPage
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_4_CatalogPage;
-                userType.StaticInitializer = StaticInitializer_4_CatalogPage;
+                userType.Activator = Activate_9_CatalogPage;
+                userType.StaticInitializer = StaticInitializer_9_CatalogPage;
                 userType.AddMemberName("Movies");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 5:   //  Microsoft.UI.Xaml.Controls.Page
+            case 10:   //  Microsoft.UI.Xaml.Controls.Page
                 xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 6:   //  Microsoft.UI.Xaml.Controls.UserControl
+            case 11:   //  Microsoft.UI.Xaml.Controls.UserControl
                 xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 7:   //  System.Collections.ObjectModel.ObservableCollection`1<XKCB.MediaItem>
+            case 12:   //  System.Collections.ObjectModel.ObservableCollection`1<XKCB.MediaItem>
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<XKCB.MediaItem>"));
-                userType.StaticInitializer = StaticInitializer_7_ObservableCollection;
-                userType.CollectionAdd = VectorAdd_7_ObservableCollection;
+                userType.StaticInitializer = StaticInitializer_12_ObservableCollection;
+                userType.CollectionAdd = VectorAdd_12_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 8:   //  System.Collections.ObjectModel.Collection`1<XKCB.MediaItem>
+            case 13:   //  System.Collections.ObjectModel.Collection`1<XKCB.MediaItem>
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_8_Collection;
-                userType.StaticInitializer = StaticInitializer_8_Collection;
-                userType.CollectionAdd = VectorAdd_8_Collection;
+                userType.Activator = Activate_13_Collection;
+                userType.StaticInitializer = StaticInitializer_13_Collection;
+                userType.CollectionAdd = VectorAdd_13_Collection;
                 xamlType = userType;
                 break;
 
-            case 9:   //  XKCB.MediaItem
+            case 14:   //  XKCB.MediaItem
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.Activator = Activate_9_MediaItem;
-                userType.StaticInitializer = StaticInitializer_9_MediaItem;
+                userType.Activator = Activate_14_MediaItem;
+                userType.StaticInitializer = StaticInitializer_14_MediaItem;
                 userType.AddMemberName("Id");
                 userType.AddMemberName("Type");
                 userType.AddMemberName("Title");
@@ -433,59 +474,55 @@ namespace XKCB.XKCB_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 10:   //  String
+            case 15:   //  String
                 xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 11:   //  System.Text.Json.JsonElement
+            case 16:   //  System.Text.Json.JsonElement
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
-                userType.StaticInitializer = StaticInitializer_11_JsonElement;
+                userType.StaticInitializer = StaticInitializer_16_JsonElement;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 12:   //  System.ValueType
+            case 17:   //  System.ValueType
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.StaticInitializer = StaticInitializer_12_ValueType;
+                userType.StaticInitializer = StaticInitializer_17_ValueType;
                 xamlType = userType;
                 break;
 
-            case 13:   //  Double
-                xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 14:   //  XKCB.DetailsPage
+            case 18:   //  XKCB.DetailsPage
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_14_DetailsPage;
-                userType.StaticInitializer = StaticInitializer_14_DetailsPage;
+                userType.Activator = Activate_18_DetailsPage;
+                userType.StaticInitializer = StaticInitializer_18_DetailsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 15:   //  XKCB.MainWindow
+            case 19:   //  XKCB.MainWindow
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Window"));
-                userType.Activator = Activate_15_MainWindow;
-                userType.StaticInitializer = StaticInitializer_15_MainWindow;
+                userType.Activator = Activate_19_MainWindow;
+                userType.StaticInitializer = StaticInitializer_19_MainWindow;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 16:   //  Microsoft.UI.Xaml.Window
+            case 20:   //  Microsoft.UI.Xaml.Window
                 xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 17:   //  XKCB.PlayerPage
+            case 21:   //  XKCB.PlayerPage
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_17_PlayerPage;
-                userType.StaticInitializer = StaticInitializer_17_PlayerPage;
+                userType.Activator = Activate_21_PlayerPage;
+                userType.StaticInitializer = StaticInitializer_21_PlayerPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 18:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
+            case 22:   //  Microsoft.UI.Xaml.Controls.TreeViewNode
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Microsoft.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_18_TreeViewNode;
-                userType.StaticInitializer = StaticInitializer_18_TreeViewNode;
+                userType.Activator = Activate_22_TreeViewNode;
+                userType.StaticInitializer = StaticInitializer_22_TreeViewNode;
                 userType.AddMemberName("Children");
                 userType.AddMemberName("Content");
                 userType.AddMemberName("Depth");
@@ -497,19 +534,15 @@ namespace XKCB.XKCB_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 19:   //  Microsoft.UI.Xaml.DependencyObject
-                xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
-                break;
-
-            case 20:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
+            case 23:   //  System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>
                 userType = new global::XKCB.XKCB_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.StaticInitializer = StaticInitializer_20_IList;
-                userType.CollectionAdd = VectorAdd_20_IList;
+                userType.StaticInitializer = StaticInitializer_23_IList;
+                userType.CollectionAdd = VectorAdd_23_IList;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 21:   //  Int32
+            case 24:   //  Int32
                 xamlType = new global::XKCB.XKCB_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
             }
@@ -581,122 +614,177 @@ namespace XKCB.XKCB_XamlTypeInfo
             var that = (global::Microsoft.UI.Xaml.Controls.XamlControlsResources)instance;
             that.UseCompactResources = (global::System.Boolean)Value;
         }
-        private object get_1_CatalogPage_Movies(object instance)
+        private object get_1_ProgressRing_IsActive(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsActive;
+        }
+        private void set_1_ProgressRing_IsActive(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsActive = (global::System.Boolean)Value;
+        }
+        private object get_2_ProgressRing_IsIndeterminate(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.IsIndeterminate;
+        }
+        private void set_2_ProgressRing_IsIndeterminate(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.IsIndeterminate = (global::System.Boolean)Value;
+        }
+        private object get_3_ProgressRing_Maximum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Maximum;
+        }
+        private void set_3_ProgressRing_Maximum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Maximum = (global::System.Double)Value;
+        }
+        private object get_4_ProgressRing_Minimum(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Minimum;
+        }
+        private void set_4_ProgressRing_Minimum(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Minimum = (global::System.Double)Value;
+        }
+        private object get_5_ProgressRing_TemplateSettings(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.TemplateSettings;
+        }
+        private object get_6_ProgressRing_Value(object instance)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            return that.Value;
+        }
+        private void set_6_ProgressRing_Value(object instance, object Value)
+        {
+            var that = (global::Microsoft.UI.Xaml.Controls.ProgressRing)instance;
+            that.Value = (global::System.Double)Value;
+        }
+        private object get_7_CatalogPage_Movies(object instance)
         {
             var that = (global::XKCB.CatalogPage)instance;
             return that.Movies;
         }
-        private object get_2_MediaItem_Id(object instance)
+        private object get_8_MediaItem_Id(object instance)
         {
             var that = (global::XKCB.MediaItem)instance;
             return that.Id;
         }
-        private void set_2_MediaItem_Id(object instance, object Value)
+        private void set_8_MediaItem_Id(object instance, object Value)
         {
             var that = (global::XKCB.MediaItem)instance;
             that.Id = (global::System.String)Value;
         }
-        private object get_3_MediaItem_Type(object instance)
+        private object get_9_MediaItem_Type(object instance)
         {
             var that = (global::XKCB.MediaItem)instance;
             return that.Type;
         }
-        private void set_3_MediaItem_Type(object instance, object Value)
+        private void set_9_MediaItem_Type(object instance, object Value)
         {
             var that = (global::XKCB.MediaItem)instance;
             that.Type = (global::System.String)Value;
         }
-        private object get_4_MediaItem_Title(object instance)
+        private object get_10_MediaItem_Title(object instance)
         {
             var that = (global::XKCB.MediaItem)instance;
             return that.Title;
         }
-        private void set_4_MediaItem_Title(object instance, object Value)
+        private void set_10_MediaItem_Title(object instance, object Value)
         {
             var that = (global::XKCB.MediaItem)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_5_MediaItem_RawYear(object instance)
+        private object get_11_MediaItem_RawYear(object instance)
         {
             var that = (global::XKCB.MediaItem)instance;
             return that.RawYear;
         }
-        private void set_5_MediaItem_RawYear(object instance, object Value)
+        private void set_11_MediaItem_RawYear(object instance, object Value)
         {
             var that = (global::XKCB.MediaItem)instance;
             that.RawYear = (global::System.Text.Json.JsonElement)Value;
         }
-        private object get_6_MediaItem_Year(object instance)
+        private object get_12_MediaItem_Year(object instance)
         {
             var that = (global::XKCB.MediaItem)instance;
             return that.Year;
         }
-        private object get_7_MediaItem_Rating(object instance)
+        private object get_13_MediaItem_Rating(object instance)
         {
             var that = (global::XKCB.MediaItem)instance;
             return that.Rating;
         }
-        private void set_7_MediaItem_Rating(object instance, object Value)
+        private void set_13_MediaItem_Rating(object instance, object Value)
         {
             var that = (global::XKCB.MediaItem)instance;
             that.Rating = (global::System.Double)Value;
         }
-        private object get_8_MediaItem_PosterUrl(object instance)
+        private object get_14_MediaItem_PosterUrl(object instance)
         {
             var that = (global::XKCB.MediaItem)instance;
             return that.PosterUrl;
         }
-        private void set_8_MediaItem_PosterUrl(object instance, object Value)
+        private void set_14_MediaItem_PosterUrl(object instance, object Value)
         {
             var that = (global::XKCB.MediaItem)instance;
             that.PosterUrl = (global::System.String)Value;
         }
-        private object get_9_TreeViewNode_Children(object instance)
+        private object get_15_TreeViewNode_Children(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Children;
         }
-        private object get_10_TreeViewNode_Content(object instance)
+        private object get_16_TreeViewNode_Content(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Content;
         }
-        private void set_10_TreeViewNode_Content(object instance, object Value)
+        private void set_16_TreeViewNode_Content(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.Content = (global::System.Object)Value;
         }
-        private object get_11_TreeViewNode_Depth(object instance)
+        private object get_17_TreeViewNode_Depth(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Depth;
         }
-        private object get_12_TreeViewNode_HasChildren(object instance)
+        private object get_18_TreeViewNode_HasChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasChildren;
         }
-        private object get_13_TreeViewNode_HasUnrealizedChildren(object instance)
+        private object get_19_TreeViewNode_HasUnrealizedChildren(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.HasUnrealizedChildren;
         }
-        private void set_13_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
+        private void set_19_TreeViewNode_HasUnrealizedChildren(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.HasUnrealizedChildren = (global::System.Boolean)Value;
         }
-        private object get_14_TreeViewNode_IsExpanded(object instance)
+        private object get_20_TreeViewNode_IsExpanded(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.IsExpanded;
         }
-        private void set_14_TreeViewNode_IsExpanded(object instance, object Value)
+        private void set_20_TreeViewNode_IsExpanded(object instance, object Value)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             that.IsExpanded = (global::System.Boolean)Value;
         }
-        private object get_15_TreeViewNode_Parent(object instance)
+        private object get_21_TreeViewNode_Parent(object instance)
         {
             var that = (global::Microsoft.UI.Xaml.Controls.TreeViewNode)instance;
             return that.Parent;
@@ -716,98 +804,139 @@ namespace XKCB.XKCB_XamlTypeInfo
                 xamlMember.Getter = get_0_XamlControlsResources_UseCompactResources;
                 xamlMember.Setter = set_0_XamlControlsResources_UseCompactResources;
                 break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsActive":
+                userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "IsActive", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_1_ProgressRing_IsActive;
+                xamlMember.Setter = set_1_ProgressRing_IsActive;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.IsIndeterminate":
+                userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "IsIndeterminate", "Boolean");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_2_ProgressRing_IsIndeterminate;
+                xamlMember.Setter = set_2_ProgressRing_IsIndeterminate;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Maximum":
+                userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Maximum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_3_ProgressRing_Maximum;
+                xamlMember.Setter = set_3_ProgressRing_Maximum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Minimum":
+                userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Minimum", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_4_ProgressRing_Minimum;
+                xamlMember.Setter = set_4_ProgressRing_Minimum;
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.TemplateSettings":
+                userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "TemplateSettings", "Microsoft.UI.Xaml.Controls.ProgressRingTemplateSettings");
+                xamlMember.Getter = get_5_ProgressRing_TemplateSettings;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Microsoft.UI.Xaml.Controls.ProgressRing.Value":
+                userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.ProgressRing");
+                xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Value", "Double");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_6_ProgressRing_Value;
+                xamlMember.Setter = set_6_ProgressRing_Value;
+                break;
             case "XKCB.CatalogPage.Movies":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.CatalogPage");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Movies", "System.Collections.ObjectModel.ObservableCollection`1<XKCB.MediaItem>");
-                xamlMember.Getter = get_1_CatalogPage_Movies;
+                xamlMember.Getter = get_7_CatalogPage_Movies;
                 xamlMember.SetIsReadOnly();
                 break;
             case "XKCB.MediaItem.Id":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.MediaItem");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Id", "String");
-                xamlMember.Getter = get_2_MediaItem_Id;
-                xamlMember.Setter = set_2_MediaItem_Id;
+                xamlMember.Getter = get_8_MediaItem_Id;
+                xamlMember.Setter = set_8_MediaItem_Id;
                 break;
             case "XKCB.MediaItem.Type":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.MediaItem");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Type", "String");
-                xamlMember.Getter = get_3_MediaItem_Type;
-                xamlMember.Setter = set_3_MediaItem_Type;
+                xamlMember.Getter = get_9_MediaItem_Type;
+                xamlMember.Setter = set_9_MediaItem_Type;
                 break;
             case "XKCB.MediaItem.Title":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.MediaItem");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_4_MediaItem_Title;
-                xamlMember.Setter = set_4_MediaItem_Title;
+                xamlMember.Getter = get_10_MediaItem_Title;
+                xamlMember.Setter = set_10_MediaItem_Title;
                 break;
             case "XKCB.MediaItem.RawYear":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.MediaItem");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "RawYear", "System.Text.Json.JsonElement");
-                xamlMember.Getter = get_5_MediaItem_RawYear;
-                xamlMember.Setter = set_5_MediaItem_RawYear;
+                xamlMember.Getter = get_11_MediaItem_RawYear;
+                xamlMember.Setter = set_11_MediaItem_RawYear;
                 break;
             case "XKCB.MediaItem.Year":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.MediaItem");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Year", "String");
-                xamlMember.Getter = get_6_MediaItem_Year;
+                xamlMember.Getter = get_12_MediaItem_Year;
                 xamlMember.SetIsReadOnly();
                 break;
             case "XKCB.MediaItem.Rating":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.MediaItem");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Rating", "Double");
-                xamlMember.Getter = get_7_MediaItem_Rating;
-                xamlMember.Setter = set_7_MediaItem_Rating;
+                xamlMember.Getter = get_13_MediaItem_Rating;
+                xamlMember.Setter = set_13_MediaItem_Rating;
                 break;
             case "XKCB.MediaItem.PosterUrl":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("XKCB.MediaItem");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "PosterUrl", "String");
-                xamlMember.Getter = get_8_MediaItem_PosterUrl;
-                xamlMember.Setter = set_8_MediaItem_PosterUrl;
+                xamlMember.Getter = get_14_MediaItem_PosterUrl;
+                xamlMember.Setter = set_14_MediaItem_PosterUrl;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Children":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Children", "System.Collections.Generic.IList`1<Microsoft.UI.Xaml.Controls.TreeViewNode>");
-                xamlMember.Getter = get_9_TreeViewNode_Children;
+                xamlMember.Getter = get_15_TreeViewNode_Children;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Content":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Content", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_10_TreeViewNode_Content;
-                xamlMember.Setter = set_10_TreeViewNode_Content;
+                xamlMember.Getter = get_16_TreeViewNode_Content;
+                xamlMember.Setter = set_16_TreeViewNode_Content;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Depth":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Depth", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_11_TreeViewNode_Depth;
+                xamlMember.Getter = get_17_TreeViewNode_Depth;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasChildren":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "HasChildren", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_12_TreeViewNode_HasChildren;
+                xamlMember.Getter = get_18_TreeViewNode_HasChildren;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.HasUnrealizedChildren":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "HasUnrealizedChildren", "Boolean");
-                xamlMember.Getter = get_13_TreeViewNode_HasUnrealizedChildren;
-                xamlMember.Setter = set_13_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Getter = get_19_TreeViewNode_HasUnrealizedChildren;
+                xamlMember.Setter = set_19_TreeViewNode_HasUnrealizedChildren;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.IsExpanded":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "IsExpanded", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_14_TreeViewNode_IsExpanded;
-                xamlMember.Setter = set_14_TreeViewNode_IsExpanded;
+                xamlMember.Getter = get_20_TreeViewNode_IsExpanded;
+                xamlMember.Setter = set_20_TreeViewNode_IsExpanded;
                 break;
             case "Microsoft.UI.Xaml.Controls.TreeViewNode.Parent":
                 userType = (global::XKCB.XKCB_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.UI.Xaml.Controls.TreeViewNode");
                 xamlMember = new global::XKCB.XKCB_XamlTypeInfo.XamlMember(this, "Parent", "Microsoft.UI.Xaml.Controls.TreeViewNode");
-                xamlMember.Getter = get_15_TreeViewNode_Parent;
+                xamlMember.Getter = get_21_TreeViewNode_Parent;
                 xamlMember.SetIsReadOnly();
                 break;
             }
